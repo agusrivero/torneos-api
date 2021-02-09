@@ -16,7 +16,7 @@ def generate_unique_code():
 # Create your models here.
 class User(models.Model):
     username = models.TextField(max_length=100, null=False)
-    email = models.EmailField(max_lenght=200, null=False)
+    email = models.EmailField(null=False)
     password = models.TextField(max_length=200, null=False)
 
 class Torneo(models.Model):
